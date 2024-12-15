@@ -13,5 +13,3 @@ const page = usePage() as Page<Record<string, NavItem[]>>;
 
 export const useNav = <T extends boolean>(key: string = "nav") =>
 	computed(() => page.props[key] as NavItem<T>[]);
-
-export default useNav;
