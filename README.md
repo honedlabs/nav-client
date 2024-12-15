@@ -1,24 +1,31 @@
-# :package_title
-[![npm version](https://badge.fury.io/js/:package_name.svg)](https://badge.fury.io/js/:package_name)
+# Create backend driven navigation routes with server-side authorization in Laravel
+[![npm version](https://badge.fury.io/js/%40honed%2Fnav.svg)](https://badge.fury.io/js/%40honed%2Fnav)
 
-:package_description
 
 ## Installation
 You can install the package via npm:
 
 ```bash
-npm i :package_name
+npm i @honed/nav
 ```
 
 ## Usage
 
 ```javascript
-import * from ':package_name';
+import { useNav } from '@honed/nav';
+
+const nav = useNav();
+
+// ...
+
+<a v-for="item in nav" :href="item.url" :class="{ 'active': item.isActive }">
+    {{ item.name }}
+</a>
 ```
 
 ## Credits
 
-- [:package_author](https://github.com/honedlabs)
+- [Joshua Wallace](https://github.com/honedlabs)
 - [All Contributors](../../contributors)
 
 ## License

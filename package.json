@@ -1,14 +1,14 @@
 {
-  "name": "@honed/:package_name",
+  "name": "@honed/nav",
   "private": false,
   "version": "0.0.1",
   "license": "MIT",
-  "description": ":package_description",
+  "description": "Create backend driven navigation routes with server-side authorization in Laravel",
   "keywords": [
     "honed",
     "vue",
     "inertia",
-    ":package_name"
+    "nav"
   ],
   "scripts": {
     "dev": "vite",
@@ -20,15 +20,14 @@
     "patch": "npm version patch --no-git-tag-version",
     "minor": "npm version minor --no-git-tag-version",
     "major": "npm version major --no-git-tag-version",
-    "release": "npm run build && npm publish --access public",
-    "init": "npx node ./init.js && npm i"
+    "release": "npm run build && npm publish --access public"
   },
-  "author": ":package_author",
+  "author": "Joshua Wallace",
   "repository": {
     "type": "git",
-    "url": "https://github.com/honedlabs/:package_name.git"
+    "url": "https://github.com/honedlabs/nav.git"
   },
-  "homepage": "https://github.com/honedlabs/:package_name#readme",
+  "homepage": "https://github.com/honedlabs/nav#readme",
   "files": [
     "dist"
   ],
